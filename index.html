@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Pizzas</title>
+</head>
+
+<body>
+  
+
+    <div class="contenedor">
+        <h1> Pizzería </h1>
+
+        <div class="nuestras_pizzas">
+
+            <div class="menu">
+                <h3> Nuestras pizzas: </h3>
+
+                <ul class="menuPizza">
+                    <li class="pizza_item">1. Muzzarella </li>
+                    <li class="pizza_item">2. De Cebolla </li>
+                    <li class="pizza_item">3. 4 quesos </li>
+                    <li class="pizza_item">4. Especial </li>
+                    <li class="pizza_item">5. Ananá </li>
+                </ul>
+            </div>
+
+            <form class="pizza-form">
+                
+                <input type="number" id="pizza-input" placeholder="Ingrese el número de la pizza deseada."/>     
+                <button id="btn-search">Ordenar pizza</button>
+                
+            </form>   
+
+        </div>
+
+        <div class="error hidden" id="msj-error">
+            <p>Ingrese el ID de la pizza. (Mayor a 0)</p>
+        </div>  
+
+        <div class="card hidden" id="card-item">        
+    
+        </div>    
+
+    </div> 
+
+    <!-- scripts -->      
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
